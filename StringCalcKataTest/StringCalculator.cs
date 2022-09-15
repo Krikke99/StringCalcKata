@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace StringCalcKataTest
 {
-    internal class StringCalculator
+    public class StringCalculator
     {
+        internal object Add(string numbers)
+        {
+            return 0;
+        }
     }
 }
