@@ -14,6 +14,7 @@ namespace StringCalcKataTest
 
         [Theory]
         [InlineData("1",1)]
+        [InlineData("2",2)]
         public void Return1GivenStringWith1(string numbers, int expectedResult)
         {
             var Calculator = new StringCalculator();
