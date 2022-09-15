@@ -2,12 +2,11 @@ namespace StringCalcKataTest
 {
     public class StringCalculator_Add
     {
+        private StringCalculator _calculator = new();
         [Fact]
         public void Return0EmptyString()
         {
-            var Calculator = new StringCalculator();
-
-            var result = Calculator.Add("");
+            var result = _calculator.Add("");
 
             Assert.Equal(0, result);
         }
@@ -17,9 +16,7 @@ namespace StringCalcKataTest
         [InlineData("2",2)]
         public void ReturnNumberGivenStringWithOneNumber(string numbers, int expectedResult)
         {
-            var Calculator = new StringCalculator();
-
-            var result = Calculator.Add(numbers);
+            var result = _calculator.Add(numbers);
 
             Assert.Equal(expectedResult, result);
         }
@@ -29,9 +26,17 @@ namespace StringCalcKataTest
         [InlineData("2,3", 5)]
         public void ReturnSumGivenStringWithTwoCommaSepperatorNumbers(string numbers, int expectedResult)
         {
-            var Calculator = new StringCalculator();
+            var result = _calculator.Add(numbers);
 
-            var result = Calculator.Add(numbers);
+            Assert.Equal(expectedResult, result);
+        }
+
+        [Theory]
+        [InlineData("1,2,3", 6)]
+        [InlineData("2,3,4", 9)]
+        public void ReturnSumGivenStringWithThreeCommaSepperatorNumbers(string numbers, int expectedResult)
+        {
+            var result = _calculator.Add(numbers);
 
             Assert.Equal(expectedResult, result);
         }
