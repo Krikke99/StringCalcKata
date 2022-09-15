@@ -15,7 +15,19 @@ namespace StringCalcKataTest
         [Theory]
         [InlineData("1",1)]
         [InlineData("2",2)]
-        public void Return1GivenStringWith1(string numbers, int expectedResult)
+        public void ReturnNumberGivenStringWithOneNumber(string numbers, int expectedResult)
+        {
+            var Calculator = new StringCalculator();
+
+            var result = Calculator.Add(numbers);
+
+            Assert.Equal(expectedResult, result);
+        }
+
+        [Theory]
+        [InlineData("1,2", 3)]
+        [InlineData("2,3", 5)]
+        public void ReturnSumGivenStringWithTwoCommaSepperatorNumbers(string numbers, int expectedResult)
         {
             var Calculator = new StringCalculator();
 
