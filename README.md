@@ -1,5 +1,14 @@
 # kata-stringcalculator
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Language](https://img.shields.io/github/languages/top/krikke99/ProjectAutomation?style=flat)](https://github.com/krikke99/ProjectAutomation)
+[![Last commit](https://img.shields.io/github/last-commit/krikke99/ProjectAutomation.svg?style=flat)](https://github.com/krikke99/ProjectAutomation/commits)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/krikke99/ProjectAutomation)](https://github.com/krikke99/ProjectAutomation/commits)
+[![Github Stars](https://img.shields.io/github/stars/krikke99/ProjectAutomation?style=flat&logo=github)](https://github.com/krikke99/ProjectAutomation/stargazers)
+[![Github Forks](https://img.shields.io/github/forks/krikke99/ProjectAutomation?style=flat&logo=github)](https://github.com/krikke99/ProjectAutomation/network/members)
+[![Github Watchers](https://img.shields.io/github/watchers/krikke99/ProjectAutomation?style=flat&logo=github)](https://github.com/krikke99/ProjectAutomation)
+[![GitHub contributors](https://img.shields.io/github/contributors/krikke99/ProjectAutomation)](https://github.com/krikke99/ProjectAutomation/graphs/contributors)
+
 ## Credits
 
 Author: **Roy Osherove** - **TDD Kata 1 - String Calculator**
